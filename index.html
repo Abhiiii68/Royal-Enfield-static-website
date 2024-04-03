@@ -1,0 +1,728 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./image/icon.png" type="image/x-icon">
+  <!-- bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- font awesome 4 -->
+  <link rel="stylesheet" href="./fount/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>Royal Enfield Clone</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <!-- 1. Header Section -->
+  <section id="headerSection">
+    <nav class="navbar navbar-expand-lg" style="background-color: black;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="logo"><img src="./image/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Motorcycles</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop The Look
+              </a>
+              <ul class="dropdown-menu" style="background-color: black;">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Service
+              </a>
+              <ul class="dropdown-menu " style="background-color: black;">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Rides
+              </a>
+              <ul class="dropdown-menu " style="background-color: black;">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Our World
+              </a>
+              <ul class="dropdown-menu " style="background-color: black;">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Locate Us</a>
+            </li>
+
+          </ul>
+          <ul id="country">
+            <li><a href="" style="text-decoration: none;">Login <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </li>
+            <li><i class="fa fa-search" aria-hidden="true"></i></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="./image/india.webp" alt=""> En
+              </a>
+              <ul class="dropdown-menu " style="background-color: black;">
+                <li><a class="dropdown-item " href="#">Global</a></li>
+                <li><a class="dropdown-item" href="#">Asia <br> Pacific</a></li>
+                <li><a class="dropdown-item" href="#">Europe</a></li>
+                <li><a class="dropdown-item" href="#">Americas</a></li>
+                <li><a class="dropdown-item" href="#">Middle <br> East & <br> Africa</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <!-- 2. Video Section -->
+  <section id="videoSection">
+    <video autoplay loop muted>
+      <source src="./header video/shotgun-650-new (1).mp4" />
+    </video>
+
+
+    <div class="overlayDiv" id="videoTextBox">
+      <h2>Shotgun 650</h2>
+      <p>Inspired by custom. For custom.</p>
+      <button>Explore</button>
+    </div>
+
+  </section>
+
+  <!-- 3. Carousel Section -->
+
+  <section id="carouselSection">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel1">
+            <button class="carouselBtn">Explore <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel2">
+            <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel3">
+            <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel4">
+            <button class="carouselBtn">Explore <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i4.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel5">
+            <h2>Buy | Sell | Exchange your Royal <br>
+              Enfield</h2>
+            <button class="carouselBtn">Explore Now <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i5.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel6">
+            <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i6.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel7">
+            <h2>Meteor 350</h2>
+            <button class="carouselBtn">Explore <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i7.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel8">
+            <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i8.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <div class="overlayDiv" id="carousel9">
+            <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+          </div>
+          <img src="./image/corocelimages/i9.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 4. News and Media Section -->
+
+  <section id="newsandmediaSection">
+    <div class="sectionHeader newsHeading" id="">
+      <h2>News and Media</h2>
+    </div>
+    <div class="customcardsWrapper">
+      <div class="customcards imgScale">
+        <img src="./image/newsimages/n1.jpg" alt="">
+        <div class="overlayDiv cardstextBox">
+          <h2>Royal Enfield Himalayan 450: First Ride Review</h2>
+        </div>
+      </div>
+      <div class="customcards imgScale">
+        <img src="./image/newsimages/n2.jpg" alt="">
+        <div class="overlayDiv cardstextBox">
+          <h2>Royal Enfield Himalayan 450</h2>
+        </div>
+      </div>
+      <div class="customcards imgScale">
+        <img src="./image/newsimages/n3.jpg" alt="">
+        <div class="overlayDiv cardstextBox">
+          <h2>2023 Royal Enfield Himalayan Review</h2>
+        </div>
+      </div>
+      <div class="customcards imgScale">
+        <img src="./image/newsimages/n4.jpg" alt="">
+        <div class="overlayDiv cardstextBox">
+          <h2>The All - New Royal Enfield Himalayan</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Motorcycle Section -->
+
+  <section id="motorcycleSection">
+    <div class="sectionHeader sectionNav">
+      <h2>Motorcycles</h2>
+
+      <ul class="sectionNavItems">
+        <li onclick="fn('shotgun650')">Shotgun 650</li>
+        <li onclick="fn('newHimalayan')">New Himalayan</li>
+        <li onclick="fn('bullet350')">Bullet 350</li>
+        <li onclick="fn('interceptor')">Interceptor</li>
+        <li onclick="fn('continentalGT')">Continental GT</li>
+        <li onclick="fn('superMeteor650')">Super Meteor 650</li>
+        <li onclick="fn('hunter350')">Hunter 350</li>
+
+
+      </ul>
+    </div>
+    <div class="imgWrapper">
+      <img src="./image/motorcycleimages/motor.jpg" alt="" id="motorImg">
+      <div class="overlayDiv" id="motorImgTextBox">
+        <h2>New Himalayan</h2>
+        <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 6. Rides Section -->
+
+  <section id="rideSection">
+    <div class="sectionHeader sectionNav">
+      <h2>Rides</h2>
+
+      <ul class="sectionNavItems">
+        <li onclick="fn('waveRunner')">Wave Runner 2024</li>
+        <li onclick="fn('cruiseBrews')">Cruise Brews</li>
+        <li onclick="fn('cosmicCaravan')">Cosmic Caravan 2024</li>
+        <li onclick="fn('motoverse')">Motoverse 2023</li>
+        <li onclick="fn('trackSchool')">Track School </li>
+        <li onclick="fn('GTcup')">GT Cup</li>
+        <li onclick="fn('rentals')">Rentals</li>
+      </ul>
+    </div>
+    <div class="imgWrapper">
+      <img src="./image/rideimges/himalayan-tibet.jpg" alt="" id="rideImg">
+      <div class="overlayDiv imgTextBox">
+        <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Apparel Section -->
+  <section id="apparelSection">
+    <div class="sectionHeader sectionNav">
+      <h2>Apparel</h2>
+
+      <ul class="sectionNavItems">
+        <li onclick="fn('shotgun2650')">Shotgun 650</li>
+        <li onclick="fn('royalAlpinestar')">Royal Enfield X Alpinestar</li>
+        <li onclick="fn('royalTCX')">Royal Enfield X TCX</li>
+        <li onclick="fn('miyJacket')">MIY Riding Jacket</li>
+
+      </ul>
+    </div>
+    <div class="imgWrapper">
+      <img src="./image/apparelimages/apparel.avif" alt="" id="apparelImg">
+      <div class="overlayDiv imgTextBox">
+        <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Accessories Section -->
+
+  <section id="accessoriesSection">
+    <div class="sectionHeader sectionNav">
+      <h2>Accessories</h2>
+
+      <ul class="sectionNavItems">
+        <li onclick="fn('genuineAccessories')">Genuine Motorcycle Accessories</li>
+        <li onclick="fn('makeItYours')">Make It Yours</li>
+
+
+      </ul>
+    </div>
+    <div class="imgWrapper">
+      <img src="./image/accessoriesimage/shot-gun-gma-banner-1.jpg" alt="" id="accessoriesImg">
+      <div class="overlayDiv imgTextBox" >
+        <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Locate us Section -->
+
+  <section id="locationSection">
+    <div class="sectionHeader sectionNav">
+      <h2>Locate Us</h2>
+
+      <ul class="sectionNavItems">
+        <li onclick="fn('stores')">Stores</li>
+        <li onclick="fn('serviceCentres')">Service Centres</li>
+        <li onclick="fn('genuineParts')">Genuine Part Distributors</li>
+        <li onclick="fn('goaGarage')">Goa Garage Cafe</li>
+
+
+      </ul>
+    </div>
+    <div class="imgWrapper">
+      <img src="./image/locateimages/dealers-home-new.jpg" alt="" id="locateImg">
+      <div class="overlayDiv imgTextBox">
+        <button class="carouselBtn">Know More <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Popular tags Section -->
+
+  <section id="popularSection">
+    <div class="sectionHeader newsHeading" id="">
+      <h2>Popular Tags</h2>
+    </div>
+
+    <div class="customcardsWrapper">
+      <!-- carousel 1 -->
+      <div class="customcards">
+        <div class="tagName">
+          <h1>#Himalayan450</h1>
+        </div>
+        <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <img src="./image/popularimages/1n.jpg" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@jpeg.aarya</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="./image/popularimages/2n.heic" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@punisher7547 </h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+              <img src="./image/popularimages/3n.heic" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@journey_with_mehel</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./image/popularimages/4n.webp" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@96_megapixel</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./image/popularimages/5n.jpg" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@kanankhanna44</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carousel 2 -->
+      <div class="customcards">
+        <div class="tagName">
+          <h1>#Motoverse2023</h1>
+        </div>
+        <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2500">
+              <img src="./image/popularimages/co2/1n.jpg" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@nobel_gill_</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img src="./image/popularimages/co2/2n.heic" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@hedgehogmotorcycles </h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./image/popularimages/co2/3n.jpg" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@kosuuuuuuuuu</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./image/popularimages/co2/4n.webp" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@aniketchavda16</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./image/popularimages/co2/5n.avif" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@artandtravelvlog</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carousel 3 -->
+      <div class="customcards">
+        <div class="tagName">
+          <h1>#PureCruising</h1>
+        </div>
+        <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-bs-interval="2500">
+              <img src="./image/popularimages/co3/1.avif" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@Anonymous</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./image/popularimages/co3/2.avif" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@Ride to food </h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./image/popularimages/co3/3.avif" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@Anonymous</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./image/popularimages/co3/4.avif" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@Anonymous</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+              <img src="./image/popularimages/co3/5.jpg" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@Anonymous</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- carousel 4 -->
+      <div class="customcards">
+        <div class="tagName">
+          <h1>#Classic350</h1>
+        </div>
+        <div id="carouselExampleSlidesOnly2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img src="./image/popularimages/co4/1.heic" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@royalcalloy</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./image/popularimages/co4/2.jpg" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@chandru_onewheeler</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="4500">
+              <img src="./image/popularimages/co4/3.webp" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@royalcalloy</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2500">
+              <img src="./image/popularimages/co4/4.webp" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@divubha___007</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./image/popularimages/co4/5.avif" class="tagImages" alt="...">
+              <div class="tagsOverlayDiv ">
+                <h2>@ironclad____</h2>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="iconsWrapper">
+      <div class="iconsDiv">
+        <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+        <p>Book a Test Ride &#160;&#160;<i class="fa fa-angle-right" aria-hidden="true"></i></p>
+      </div>
+      <div class="iconsDiv">
+        <i class="fa fa-map-o" aria-hidden="true"></i>
+        <p>Find a Store &#160;&#160; <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+      </div>
+      <div class="iconsDiv">
+        <i class="fa fa-wrench" aria-hidden="true"></i>
+        <p>Book a Service &#160;&#160;<i class="fa fa-angle-right" aria-hidden="true"></i></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. Footer Section -->
+
+  <section id="footerSection">
+    <div id="socialMediaDiv">
+      <p>Join the conversation</p>
+      <div class="socialMediaIcons">
+        <img src="images/twitter.png" onmouseover="showcolor('twitter')" onmouseleave="hidecolor('twitter')" alt="">
+        <img src="./images/facebook.png" onmouseover="showcolor('facebook')" onmouseleave="hidecolor('facebook')"
+          alt="">
+
+        <img src="images/youtube.png" onmouseover="showcolor('youtube')" onmouseleave="hidecolor('youtube')" alt="">
+
+        <img src="images/linkedin.png" onmouseover="showcolor('linkedin')" onmouseleave="hidecolor('linkedin')" alt="">
+
+        <img src="images/instagram.png" onmouseover="showcolor('instagram')" onmouseleave="hidecolor('instagram')"
+          alt="">
+
+      </div>
+    </div>
+    <div id="mainFooter">
+      <div class="footers">
+        <h4>Motorcycles</h4>
+        <ul class="footerList">
+          <li>Shotgun 650</li>
+          <li>New Himalayan</li>
+          <li>Bullet 350</li>
+          <li>Super Meteor 650</li>
+          <li>Hunter 350</li>
+          <li>Scram 411</li>
+          <li>Classic 350</li>
+          <li>Meteor 350</li>
+          <li>Interceptor 650</li>
+          <li>Continental GT</li>
+        </ul>
+      </div>
+      <div class="footers">
+        <h4>Rides & Events</h4>
+        <ul class="footerList">
+          <li>Rides</li>
+        </ul>
+      </div>
+      <div class="footers">
+        <h4>Support</h4>
+        <ul class="footerList">
+          <li>Service Centres</li>
+          <li>Stores</li>
+          <li>Owner's Manual</li>
+          <li>Contact Us</li>
+          <li>Book a Test Ride</li>
+          <li>Make It Yours</li>
+          <li>Become a Dealer</li>
+          <li>Become a Genuine <br>Parts Distributor</li>
+        </ul>
+      </div>
+      <div class="footers">
+        <h4>About Us</h4>
+        <ul class="footerList">
+          <li>Since 1901</li>
+          <li>About Eicher Motors</li>
+        </ul>
+      </div>
+      <div class="footers">
+        <h4>News & Media</h4>
+        <ul class="footerList">
+          <li>News</li>
+          <li>Press Releases</li>
+          <li>Media Kit</li>
+          <li>Events</li>
+        </ul>
+      </div>
+      <div class="footers">
+        <h4>Careers</h4>
+        <ul class="footerList">
+          <li>Life at Royal Enfield</li>
+          <li>Careers at Royal Enfield</li>
+          <li>Dealership</li>
+        </ul>
+      </div>
+      <div class="footers">
+        <h4>Our World</h4>
+        <ul class="footerList">
+          <li>Royal Enfield App</li>
+          <li>Royal Enfield Tripper</li>
+          <li>Royal Enfield Wingman</li>
+          <li>Royal Enfield Tripper Dash</li>
+          <li>Reown</li>
+          <li>Goa Garage Cafe</li>
+          <li>Custom World</li>
+          <li>News and Media</li>
+          <li>Since 1901</li>
+          <li>Wallpapers</li>
+          <li>Forum</li>
+          <li>Trip Stories</li>
+        </ul>
+      </div>
+    </div>
+    <div id="copyright">
+      <div>
+        <p>© 2024. Royal Enfield. | *T&C apply. Images shown here may differ from the actual product.</p>
+      </div>
+      <div>
+        <ul class="sectionNavItems" id="copyrightPages">
+          <li>Private Import Policy</li>
+          <li>Privacy</li>
+          <li>Terms & Conditions</li>
+          <li>Cookies</li>
+          <li>Sitemap</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,551 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+/* common css used in - video section, carousel section, news and media section,   */
+.overlayDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 12;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.overlayDiv h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.overlayDiv p {
+  margin: 0;
+  padding: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.overlayDiv button {
+  margin: 0;
+  background-color: white;
+  border: none;
+  padding: 7px 30px;
+  color: black;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+/*---- 1. Header Section starts here ----*/
+
+#headerSection {
+  background-color: black;
+
+}
+
+#logo {
+  margin-right: 80px;
+}
+
+#navbarSupportedContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#headerSection a {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+}
+
+#headerSection a:hover {
+  background-color: black;
+  color: red;
+}
+
+#country {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  color: white;
+  padding-top: 10px;
+}
+
+#country img {
+  width: 30px;
+}
+
+#country li {
+  margin-right: 20px;
+}
+
+/*---- 2. Video Section starts here ----*/
+
+#videoSection {
+  position: relative;
+  overflow: hidden;
+  background-color: red;
+  width: 100%;
+}
+
+video {
+  display: block;
+  width: 100%;
+}
+
+#videoTextBox {
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  padding-left: 80px;
+}
+
+
+/*---- 3. Carousel Section starts here ----*/
+
+
+.overlayDiv .carouselBtn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  padding: 7px 20px;
+}
+
+.overlayDiv .carouselBtn i {
+  margin-top: -2px;
+  font-size: 23px;
+}
+
+#carouselExampleInterval .carousel-indicators>button {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #141414;
+}
+
+#carousel1 {
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  padding-right: 20%;
+  padding-bottom: 50px;
+}
+
+#carousel2 {
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  padding-left: 10%;
+}
+
+#carousel3 {
+  align-items: flex-end;
+  justify-content: flex-end;
+  color: #fff;
+  padding-right: 20%;
+  padding-bottom: 50px;
+}
+
+#carousel4 {
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  padding-right: 20%;
+}
+
+#carousel5 {
+  gap: 25px;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  padding-left: 7%;
+}
+
+#carousel6 {
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #fff;
+  padding-left: 7%;
+  padding-bottom: 50px;
+}
+
+#carousel7 {
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #fff;
+  padding-left: 7%;
+  padding-bottom: 50px;
+  gap: 25px;
+}
+
+#carousel8 {
+  align-items: flex-end;
+  justify-content: center;
+  color: #fff;
+  padding-right: 20%;
+}
+
+#carousel9 {
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #fff;
+  padding-left: 7%;
+  padding-bottom: 50px;
+}
+
+/* common css used in - news and media section, popular tags section   */
+
+.sectionHeader {
+  background-color: #212121;
+  color: #fff;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  color: whitesmoke;
+  font-size: 23px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+/*---- 4. News and Media Section starts here ----*/
+
+.newsHeading {
+  justify-content: center;
+}
+
+
+.customcardsWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.customcardsWrapper .customcards {
+  width: 25%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.customcards img {
+
+  width: 100%;
+  transition: all ease 1s;
+}
+
+.customcards.imgScale:hover.customcards img {
+  transform: scale(1.1);
+}
+
+.cardstextBox {
+  justify-content: flex-end;
+  color: whitesmoke;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+.cardstextBox h2 {
+  font-size: 14.2px;
+  font-weight: 700;
+}
+
+
+/*---- 5. Motorcycle Section starts here ----*/
+/* same css applied to Rides section, Apparel section, Accessories section and Locate us section using same classes */
+
+.sectionNav {
+  padding-left: 25px;
+  gap: 50px;
+}
+
+.sectionNav h2 {
+  font-size: 20px;
+}
+
+.sectionNavItems {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  background-color: white;
+  gap: 2px;
+
+}
+
+.sectionNavItems li {
+  margin: 0;
+  padding: 0;
+  background-color: #212121;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.sectionNavItems li:hover {
+  color: red;
+}
+
+.imgWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.imgWrapper img {
+  width: 100%;
+}
+
+.imgTextBox {
+  position: absolute;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 7%;
+}
+
+/* this id is used to set heading and button right side inside motorcycle section Image*/
+#motorImgTextBox {
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+  padding-left: 65%;
+}
+
+/*---- 10. Popular tags Section starts here ----*/
+
+
+.customcardsWrapper .customcards {
+  width: 25%;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#carouselExampleSlidesOnly2 .carousel-item .tagImages {
+  width: 100%;
+  aspect-ratio: 0.85;
+}
+
+.tagsOverlayDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 12;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  padding-right: 8%;
+  color: #fff;
+}
+
+.tagsOverlayDiv i {
+  font-size: 25px;
+}
+
+.tagsOverlayDiv h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 14.2px;
+  font-weight: 600;
+}
+
+.tagName {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  z-index: 999;
+}
+
+.tagName h1 {
+  display: block;
+  font-weight: 700;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+.tagName h1:hover{
+  color: red;
+}
+
+.customcards:hover .tagsOverlayDiv{
+  color: red;
+}
+
+.customcards:hover .tagsOverlayDiv h2{
+  color: red;
+}
+
+.iconsWrapper {
+  background-color: #212121;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px 0;
+
+}
+
+.iconsWrapper .iconsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.iconsWrapper .iconsDiv i {
+  font-size: 40px;
+  color: #939292;
+}
+
+.iconsWrapper .iconsDiv p {
+  color: #b4b2b2;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.iconsWrapper .iconsDiv p:hover {
+  color: red;
+
+}
+
+.iconsWrapper .iconsDiv p i {
+  font-weight: 600;
+  font-size: 16px;
+
+}
+
+/*---- 11. Footer Section starts here ----*/
+
+#footerSection {
+  background-color: rgb(230, 227, 227);
+}
+
+#footerSection #socialMediaDiv {
+  width: 98%;
+  margin: 0 auto;
+  display: flex;
+  padding: 30px 0;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  gap: 20px;
+  color: black;
+  border-bottom: 1px solid grey;
+  padding-right: 30px;
+}
+
+#socialMediaDiv p {
+  margin: 0;
+}
+
+#socialMediaDiv .socialMediaIcons img {
+  cursor: pointer;
+  width: 24px;
+  margin-right: 15px;
+}
+
+#mainFooter {
+  width: 98%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  color: black;
+  border-bottom: 1px solid grey;
+
+}
+
+.footers h4 {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#mainFooter .footerList {
+  list-style-type: none;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 600;
+
+}
+#mainFooter .footerList li{
+  line-height: 30px;
+  cursor: pointer;
+}
+#mainFooter .footerList li:hover{
+  color: red;
+}
+
+#copyright{
+  width: 95%;
+  padding: 18px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#copyright div p{
+  font-size: 10px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+
+.sectionNavItems#copyrightPages{
+  background-color: black;
+  justify-content: center;
+  gap: 0;
+}
+.sectionNavItems#copyrightPages li{
+  padding: 0 10px;
+  background-color: rgb(230, 227, 227);
+  border-right: 1px solid black;
+  font-size: 10px;
+  color: black;
+}
+.sectionNavItems#copyrightPages li:hover{
+  color: red;
+}
+.sectionNavItems#copyrightPages li:last-child{
+  border: none;
+}
